@@ -14,7 +14,7 @@
 // (555)5(55?)-5555
 
 function telephoneCheck(str) {
-  return (/^[1]*\s*[(]*\d{3}[)]*[-]*\s*\d{3}\s*[-]*\d{4}$/.test(str) && /[(]/.test(str) === /[)]/.test(str)) ? true : false;
+  return /^[1]*(\s|\()*\d{3}(\)|\-|\s)*\d{3}(\s|\-)*\d{4}$/.test(str) && /[(]/.test(str) === /[)]/.test(str) ? true : false;
 }
 
 console.log(telephoneCheck("1 555)555-5555"));
