@@ -14,11 +14,7 @@
 // (555)5(55?)-5555
 
 function telephoneCheck(str) {
-  let reg = /^[1]*\s*[(]*\d{3}[)]*[-]*\s*\d{3}\s*[-]*\d{4}$/;
-  if (reg.test(str)) {
-    if (/[(]/.test(str) !== /[)]/.test(str)){
-      return false;
-    }
+  if (/^[1]*\s*[(]*\d{3}[)]*[-]*\s*\d{3}\s*[-]*\d{4}$/.test(str) && /[(]/.test(str) === /[)]/.test(str)) {
     return true;
   }
   return false;
