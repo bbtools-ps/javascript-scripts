@@ -20,3 +20,4 @@ function palindrome(str) {
 }
 
 console.log(palindrome("1 eye for of 1 eye."));
+// Expected output: true

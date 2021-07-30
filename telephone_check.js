@@ -1,0 +1,30 @@
+// US telephone validator. 
+// Some of the valid formats are:
+// 555-555-5555
+// (555)555-5555
+// (555) 555-5555
+// 555 555 5555
+// 5555555555
+// 1 555 555 5555
+
+// Some of the invalid formats:
+// (275)76227382
+// 2(757)6227382
+// 555)-555-5555
+// (555)5(55?)-5555
+
+function telephoneCheck(str) {
+  let reg = /^[1]*\s*[(]*\d{3}[)]*[-]*\s*\d{3}\s*[-]*\d{4}$/;
+  if (reg.test(str)) {
+    if (/[(]/.test(str) !== /[)]/.test(str)){
+      return false;
+    }
+    return true;
+  }
+  return false;
+}
+
+console.log(telephoneCheck("1 555)555-5555"));
+// Expected output: false
+console.log(telephoneCheck("1 555-555-5555"));
+// Expected output: true

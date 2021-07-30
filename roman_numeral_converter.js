@@ -130,5 +130,6 @@ function convertToRoman(num) {
 }
 
 console.log(convertToRoman(3999));
-
+// Expected output: MMMCMXCIX
 console.log(convertToArabic("MMMCMXCIX"));
+// Expected output: 3999
