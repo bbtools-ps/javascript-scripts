@@ -7,3 +7,4 @@ The list of projects (scripts):
 3. Factorial
 4. Telephone check
 5. Decimals fix
+6. Title case
