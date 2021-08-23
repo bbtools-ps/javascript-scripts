@@ -2,7 +2,7 @@ const decimalsToInteger = (num, decimals) => {
     if (num % 1 === 0) {
         return num * (100000000000000000 / decimals);
     } else {
-        return decimalsToInteger(num * 10, decimals * 10)
+        return decimalsToInteger(num * 10, decimals * 10);
     }
 }
 
