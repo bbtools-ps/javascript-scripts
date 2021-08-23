@@ -1,3 +1,4 @@
+// Function for reversing an array. Returns: array
 function reverseArray(arr) {
     let result = [];
     for (let i = 0; i < arr.length; i++) {
@@ -6,6 +7,7 @@ function reverseArray(arr) {
     return result;
 }
 
+// Function for checking if string is a palindrome. Returns: boolean
 function palindrome(str) {
     str = str.toLowerCase();
     let arrayOriginal = str.match(/[a-z0-9]/g);

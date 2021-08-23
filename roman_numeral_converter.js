@@ -1,4 +1,4 @@
-// Repeat the string for a given multiplier
+// Function for repeating the string for a given multiplier
 function stringRepeat(str, multiplier) {
     let result = "";
 
@@ -9,7 +9,7 @@ function stringRepeat(str, multiplier) {
     return result;
 }
 
-// Convert the character to number
+// Function for converting the character to number
 function convertCharacterToNumber(char) {
     switch (char) {
         case "I":
@@ -31,7 +31,7 @@ function convertCharacterToNumber(char) {
     }
 }
 
-// Function for converting roman to arabic numbers
+// Function for converting roman to arabic numbers. Returns: number
 function convertToArabic(str) {
     let result = 0,
     currentNumber = 0,
@@ -54,7 +54,7 @@ function convertToArabic(str) {
     return result;
 }
 
-// Function for converting arabic to roman numbers
+// Function for converting arabic to roman numbers. Returns: string
 function convertToRoman(num) {
     let numbers = [
         {
