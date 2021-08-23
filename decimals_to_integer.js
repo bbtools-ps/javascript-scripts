@@ -7,7 +7,7 @@ const decimalsToInteger = (num, decimals) => {
 }
 
 let a = 0.1;
-let b = 0.02;
+let b = 0.2;
 
 // Overcoming Javascript precision issues when trying to add two numbers with decimal spaces because of the double floating point precision
 
