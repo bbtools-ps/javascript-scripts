@@ -1,4 +1,4 @@
-// Overcoming Javascript precision issues when trying to add or subtract two numbers with decimal spaces because of the double floating point. This is made for the UI so that the user has better representation of the numbers.
+// Overcoming Javascript floating point rounding errors issues when trying to add or subtract two numbers with decimal spaces. For example, 0.1 + 0.2 === 0.30000000000000004. This happens because all javascript numbers are double precision floating point, so to fix this we have to determine how many decimals spaces there are, multiply to convert numbers to integers, perform addition or substraction, and then divide again to get the decimal point.
 
 // Function for counting decimal spaces from the number. Returns: number
 const countDecimalSpaces = (num) => {
@@ -14,7 +14,9 @@ const countDecimalSpaces = (num) => {
 
 // Function for converting numbers with decimal spaces to integers. Returns: number
 const convertDecimalsToInteger = (num, decimals, maxDecimals) => {
+    // Base case
     if (num % 1 === 0) {
+        // When number is finally integer return it
         return num * (maxDecimals / decimals);
     } else {
         return convertDecimalsToInteger(num * 10, decimals * 10, maxDecimals);
