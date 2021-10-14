@@ -6,7 +6,7 @@ const countDecimalSpaces = (num) => {
     let str = num.toString();
     // Check if there are any decimals in the string
     if (/\./.test(num)) {
-        return str.split('.')[1].length;
+        return str.split(".")[1].length;
     } else {
         return 0;
     }

@@ -13,7 +13,7 @@
 // 555)-555-5555
 // (555)5(55?)-5555
 
-// Function for checking if telephone number is in valid format. Returns: boolean
+// Checks if a telephone number is in valid format. Returns: boolean
 function telephoneCheck(str) {
   return /^[1]*(\s|\()*\d{3}(\)|\-|\s)*\d{3}(\s|\-)*\d{4}$/.test(str) && /[(]/.test(str) === /[)]/.test(str) ? true : false;
 }

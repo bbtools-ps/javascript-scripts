@@ -34,16 +34,16 @@ function convertCharacterToNumber(char) {
 // Function for converting roman to arabic numbers. Returns: number
 function convertToArabic(str) {
     let result = 0,
-    currentNumber = 0,
-    previousNumber = 0;
+        currentNumber = 0,
+        previousNumber = 0;
     str = str.toUpperCase();
 
-    for (let i = 0; i < str.length; i++){
+    for (let i = 0; i < str.length; i++) {
         // Convert the character to number
         currentNumber = convertCharacterToNumber(str[i]);
         // If the current number is higher than previous then subtract it twice with previous
         if (currentNumber > previousNumber) {
-          currentNumber = currentNumber - previousNumber * 2;
+            currentNumber = currentNumber - previousNumber * 2;
         }
         // Calculate the result by adding the current number
         result += currentNumber;
@@ -113,8 +113,8 @@ function convertToRoman(num) {
         result = "";
 
     for (let i = numbers.length - 1; i >= 0; i--) {
-        
-// Calculate the quotient by rounding it to the floor
+
+        // Calculate the quotient by rounding it to the floor
         let quotient = Math.floor(num / numbers[i].value);
         // Create the result by adding the strings using the custom function for a string repeat
         result += stringRepeat(numbers[i].roman, quotient);

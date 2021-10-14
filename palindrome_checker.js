@@ -7,7 +7,7 @@ function reverseArray(arr) {
     return result;
 }
 
-// Function for checking if string is a palindrome. Returns: boolean
+// Function that checks if string is a palindrome. Returns: boolean
 function palindrome(str) {
     str = str.toLowerCase();
     let arrayOriginal = str.match(/[a-z0-9]/g);

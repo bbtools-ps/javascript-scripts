@@ -1,4 +1,4 @@
-// Function for calculating factorial from a given number !x = x * (x - 1) * ... 1
+// Function that calculates factorial from a given number !x = x * (x - 1) * ... 1
 function factorial(num) {
   // Base case
   if (num === 0) {
@@ -9,3 +9,4 @@ function factorial(num) {
 }
 
 console.log(factorial(10));
+// Expected output: 3628800
