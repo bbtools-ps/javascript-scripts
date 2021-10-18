@@ -7,5 +7,5 @@ const titleCase = (str) => {
     let str = "title  case here";
 
     console.log(titleCase(str));
-    // Expected output: Title Case Here
+    // Output: Title Case Here
 })();

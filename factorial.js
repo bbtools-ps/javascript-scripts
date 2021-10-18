@@ -9,4 +9,4 @@ function factorial(num) {
 }
 
 console.log(factorial(10));
-// Expected output: 3628800
+// Output: 3628800

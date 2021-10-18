@@ -10,6 +10,7 @@ Here is the list of various scripts written using javascript. They are made thro
 4. [Telephone checker](#telephone-checker)
 5. [Decimals fix](#decimals-fix)
 6. [Title case](#title-case)
+7. [Fix runts](#fix-runts)
 
 ## Details
 
@@ -20,9 +21,9 @@ For converting from Arabic to roman use function *convertToRoman(num)* with the 
 
 ```
 console.log(convertToRoman(3999));
-// Expected output: MMMCMXCIX
+// Output: MMMCMXCIX
 console.log(convertToArabic("MMMCMXCIX"));
-// Expected output: 3999
+// Output: 3999
 ```
 
 ### Palindrome checker
@@ -31,7 +32,7 @@ Checks if a word or a sentence is a palindrome. A palindrome is a word or a sent
 
 ```
 console.log(palindrome("1 eye for of 1 eye."));
-// Expected output: true
+// Output: true
 ```
 
 ### Factorial
@@ -40,7 +41,7 @@ Factorial is a function that calculates the factorial from a given number that i
 
 ```
 console.log(factorial(10));
-// Expected output: 3628800
+// Output: 3628800
 ```
 
 ### Telephone checker
@@ -49,9 +50,9 @@ Checks if a telephone number is in valid format. The parameter that is passed to
 
 ```
 console.log(telephoneCheck("1 555)555-5555"));
-// Expected output: false
+// Output: false
 console.log(telephoneCheck("1 555-555-5555"));
-// Expected output: true
+// Output: true
 ```
 
 ### Decimals fix
@@ -77,5 +78,16 @@ The function that converts the string that is passed as a parameter to the title
 let str = 'title  case here';
 
 console.log(titleCase(str));
-// Expected output: Title Case Here
+// Output: Title Case Here
+```
+
+### Fix runts
+
+Function that fixes runts from the string (paragraph). It replaces the last whitespace character with the &nbsp; (non-breaking space character)
+
+```
+let str = "640K ought to be enough for anybody. (Bill Gates, 1981) The best thing about a boolean is even if you are wrong, you are only off by a bit. (Anonymous) I think Microsoft named .Net so it wouldn’t show up in a Unix directory listing. (Oktal) Come to think of it, there are already a million monkeys on a million typewriters, and Usenet is nothing like Shakespeare. (Blair Houghton)"
+
+console.log(fixRunts(str))
+// Output: 640K ought to be enough for anybody. (Bill Gates, 1981) The best thing about a boolean is even if you are wrong, you are only off by a bit. (Anonymous) I think Microsoft named .Net so it wouldn’t show up in a Unix directory listing. (Oktal) Come to think of it, there are already a million monkeys on a million typewriters, and Usenet is nothing like Shakespeare. (Blair&nbsp;Houghton)
 ```
