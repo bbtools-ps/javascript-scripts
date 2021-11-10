@@ -1,4 +1,4 @@
-# Javascript Tests
+# Javascript Scripts
 
 Here is the list of various scripts written using javascript. They are made through the exploration of the language so you are free to use them as you wish.
 
