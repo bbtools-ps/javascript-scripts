@@ -57,63 +57,62 @@ function convertToArabic(str) {
 // Function for converting arabic to roman numbers. Returns: string
 function convertToRoman(num) {
     let numbers = [
-        {
-            value: 1,
-            roman: "I"
-        },
-        {
-            value: 4,
-            roman: "IV"
-        },
-        {
-            value: 5,
-            roman: "V"
-        },
-        {
-            value: 9,
-            roman: "IX"
-        },
-        {
-            value: 10,
-            roman: "X"
-        },
-        {
-            value: 40,
-            roman: "XL"
-        },
-        {
-            value: 50,
-            roman: "L"
-        },
-        {
-            value: 90,
-            roman: "XC"
-        },
-        {
-            value: 100,
-            roman: "C"
-        },
-        {
-            value: 400,
-            roman: "CD"
-        },
-        {
-            value: 500,
-            roman: "D"
-        },
-        {
-            value: 900,
-            roman: "CM"
-        },
-        {
-            value: 1000,
-            roman: "M"
-        }
-    ],
+            {
+                value: 1,
+                roman: "I",
+            },
+            {
+                value: 4,
+                roman: "IV",
+            },
+            {
+                value: 5,
+                roman: "V",
+            },
+            {
+                value: 9,
+                roman: "IX",
+            },
+            {
+                value: 10,
+                roman: "X",
+            },
+            {
+                value: 40,
+                roman: "XL",
+            },
+            {
+                value: 50,
+                roman: "L",
+            },
+            {
+                value: 90,
+                roman: "XC",
+            },
+            {
+                value: 100,
+                roman: "C",
+            },
+            {
+                value: 400,
+                roman: "CD",
+            },
+            {
+                value: 500,
+                roman: "D",
+            },
+            {
+                value: 900,
+                roman: "CM",
+            },
+            {
+                value: 1000,
+                roman: "M",
+            },
+        ],
         result = "";
 
     for (let i = numbers.length - 1; i >= 0; i--) {
-
         // Calculate the quotient by rounding it to the floor
         let quotient = Math.floor(num / numbers[i].value);
         // Create the result by adding the strings using the custom function for a string repeat

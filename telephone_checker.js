@@ -1,4 +1,4 @@
-// US telephone validator. 
+// US telephone validator.
 // Some of the valid formats are:
 // 555-555-5555
 // (555)555-5555
@@ -15,7 +15,10 @@
 
 // Checks if a telephone number is in valid format. Returns: boolean
 function telephoneCheck(str) {
-  return /^[1]*(\s|\()*\d{3}(\)|\-|\s)*\d{3}(\s|\-)*\d{4}$/.test(str) && /[(]/.test(str) === /[)]/.test(str) ? true : false;
+    return /^[1]*(\s|\()*\d{3}(\)|\-|\s)*\d{3}(\s|\-)*\d{4}$/.test(str) &&
+        /[(]/.test(str) === /[)]/.test(str)
+        ? true
+        : false;
 }
 
 console.log(telephoneCheck("1 555)555-5555"));
