@@ -1,4 +1,4 @@
-const getMaxdecimals = (numbersArr) => {
+const getMaxDecimals = (numbersArr) => {
   let maxDecimals = 0;
   for (let i = 0; i < numbersArr.length; i++) {
     let decimals = numbersArr[i].toString().split('.');
@@ -8,7 +8,7 @@ const getMaxdecimals = (numbersArr) => {
 }
 
 const sumNumbers = (numbersArr) => {
-  const maxDecimals = getMaxdecimals(numbersArr);
+  const maxDecimals = getMaxDecimals(numbersArr);
   const result = numbersArr.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
   return Number(result.toFixed(maxDecimals));
 }
